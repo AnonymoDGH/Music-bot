@@ -1,6 +1,8 @@
 const { Player } = require('discord-player');
 const Genius = require("genius-lyrics");
 const { Client, GatewayIntentBits } = require('discord.js');
+const token = process.env['token']
+const keep_alive = require('./keep_alive.js')
 
 global.client = new Client({
     intents: [
@@ -22,4 +24,4 @@ player.extractors.loadDefault();
 
 require('./src/loader');
 
-client.login(client.config.app.token);
+client.login(token);

@@ -22,7 +22,7 @@ module.exports = {
        .setTitle('control your music from the buttons below')
        .setImage(inter.guild.iconURL({ size: 4096, dynamic: true }))
        .setColor('#2f3136')
-       .setFooter({ text: 'Music comes first - Made with heart by Zerio ❤️', iconURL: inter.member.avatarURL({ dynamic: true })})
+       .setFooter({ text: 'Music comes first - Made with heart by popbob ❤️', iconURL: inter.member.avatarURL({ dynamic: true })})
 
 
          inter.editReply({ content: `sending controller to ${Channel}... ✅`, ephemeral: true})

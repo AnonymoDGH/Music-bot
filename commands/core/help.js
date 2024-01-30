@@ -11,10 +11,10 @@ module.exports = {
         const embed = new EmbedBuilder()
         .setColor('#ff0000')
         .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL({ size: 1024, dynamic: true }) })
-        .setDescription('This code comes from a GitHub project [ZerioDev/Music-bot](https://github.com/ZerioDev/Music-bot).\nThe use of this one is possible while keeping the credits for free.\nIf you want to remove the credits join the Discord support server. [here](https://discord.gg/5cGSYV8ZZj)')
+        .setDescription('join discord support [popbob](https://discord.gg/XveqCP5hKc)')
         .addFields([ { name: `Enabled - ${commands.size}`, value: commands.map(x => `\`${x.name}\``).join(' | ') } ])
         .setTimestamp()
-        .setFooter({ text: 'Music comes first - Made with heart by Zerio ❤️', iconURL: inter.member.avatarURL({ dynamic: true })});
+        .setFooter({ text: 'Music comes first - Made with heart by popbob ❤️', iconURL: inter.member.avatarURL({ dynamic: true })});
 
         inter.editReply({ embeds: [embed] });
     },

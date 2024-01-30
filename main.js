@@ -28,7 +28,6 @@ global.client = new Client({
         status: 'dnd' // Cambia el estado a "no molestar"
     }
 });
-});
 
 client.config = require('./config');
 

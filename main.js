@@ -13,6 +13,21 @@ global.client = new Client({
         GatewayIntentBits.MessageContent
     ],
     disableMentions: 'everyone',
+    
+    presence: {
+        activities: [
+            {
+                name: '/help',
+                type: 'PLAYING',
+                assets: {
+                    large_image: '/vol 100',
+                    large_text: 'use /help to display the commands'
+                }
+            }
+        ],
+        status: 'dnd' // Cambia el estado a "no molestar"
+    }
+});
 });
 
 client.config = require('./config');
